@@ -1,0 +1,8 @@
+services:
+  tormenta:
+    build: .
+    image: operacion-tormenta:latest
+    container_name: operacion-tormenta
+    ports:
+      - "8080:80"
+    restart: unless-stopped
